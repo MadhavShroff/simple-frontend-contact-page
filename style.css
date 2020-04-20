@@ -9,6 +9,10 @@ p {
     padding: 1em;
 }
 
+em {
+    color: #00bcd4;
+}
+
 h2 {
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
@@ -93,6 +97,7 @@ img {
     height: 300px;
     text-align: center;
     background-color: #727272;
+    color: #00bcd4;
 }
 
 body {
@@ -100,7 +105,7 @@ body {
     margin: 8px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
     .column {
         width: 100%;
     }
@@ -111,5 +116,25 @@ body {
         position: relative;
         padding: 20px;
         overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    #mz {
+        position: relative;
+        top: 4em;
+        max-width: 200px;
+        z-index: 100;
+        border-radius: 4px;
+    }
+}
+
+@media only screen and (min-width: 1382px) {
+    #mz {
+        position: relative;
+        top: 2em;
+        max-width: 200px;
+        z-index: 100;
+        border-radius: 4px;
     }
 }
